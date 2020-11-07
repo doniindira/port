@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+li:hover,
+a:hover {
+    opacity: 0.5;
+}
+
+/* Header */
+
+.bungkus{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.header {
+    
+    height: 50px;
+    display: flex;
+    background-color: #004494;
+}
+
+.header .brand{
+    line-height: 50px;
+    color: #e2f7ff;
+    margin-left: 10px;
+    flex: 7;
+}
+
+.header .nav{
+    flex: 1;
+}
+
+.list-nav ul{
+    display: flex;
+    
+}
+
+.list-nav ul li img{
+    margin-top: 15px;
+    margin-right: 7px;
+    
+}
+
+.list-nav ul li a{
+    color: #e2f7ff;
+    line-height: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+    
+}
+
+/* Jumbotron  */
+
+.jumbotron{
+    height: 600px;
+    
+    background-image: url("../img/MEME2.png");
+}
+
+
+.jumbotron-content {
+    
+    padding-top: 250px;
+    padding-left: 10%;
+}
+
+.jumbotron a{
+    
+    color: #e2f7ff;
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+.jumbotron h1{
+    
+    
+    color: #e2f7ff;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/* Body */
+
+
+.body{
+    padding-top: 100px;
+    padding-left: 10%;
+    height: 600px;
+    
+    background-color: #e2f7ff;
+
+}
+
+
+.card{
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px 2px grey;
+    
+}
+
+/* Inside-Card : Content*/
+
+.card .content{
+    flex: 3;
+    display: block;
+    text-align: center;
+}
+
+.card .foto img{
+    height: 100px;
+    width: 100px;  
+    margin-top: 90px; 
+
+    border-radius: 90px;
+    padding: 3px;
+    border: 1px solid grey;
+    
+}
+
+.card .title{
+    margin-top: 10px;
+    font-size: 25px;
+    
+}
+.card .title h4{
+    font-weight: 500;
+
+}
+.card .content .line{
+    border-top: 2px solid rgba(7, 7, 7, 0.47);
+    width: 60%;
+    border-radius: 50%;
+    margin: 5px auto;
+}    
+
+.card .content .desc{
+    margin: 0px auto;
+    text-align: center;
+    width: 80%;
+}
+.card .content .desc p{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/* Inside-Card : Section*/
+
+
+.card .section{
+    flex: 2;
+    border-left: 1px solid grey;
+}
+
+.card .section .mydata{
+    padding-left: 10%;
+    padding-top:90px;
+}
+
+.card .section .mydata h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card .section .mydata p{
+    margin-top: 20px;
+    border-bottom: 0.3px solid gray;
+    padding-bottom: 5px;
+    width: 90%;
+}
+
+
+/* FOOTER */
+
+.footer {
+    height: 100%px;
+    background-color: #004494;
+    box-shadow: 0px -3px 4px grey;
+}
+.footer .row p{
+        color: white;
+        text-align: center;
+        font-family: monospace;
+        padding: 7px;
+    }
+
+
+
+/* SIDENAV */
+.side-nav {
+    padding-top: 50px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    background: white;
+    width: 0px;
+    display: block;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: -2px 0px 4px grey;
+}
+
+.side-nav ul li {
+    display: block;
+    color: #74b9ff;
+    padding: 10px;
+    margin: 0px;
+}
+.side-nav ul li img{
+    padding-right: 10px;
+    position: relative;
+    top: 3.5px;
+}
+
+.side-nav ul li a {
+    display: block;
+    color: #74b9ff;
+}  
+
+.opac-close{
+    opacity: 0;
+}
+.opac-open{
+    opacity: 1;
+}
+
+.side-nav-open{
+    width: 170px;
+}
+.close1{
+
+    position: relative;
+    margin-top: 10px;
+    width: 20px;
+    display: block;
+    bottom: 1px;
+    left: 8.5px;
+    top :1px;
+    z-index: 2;
+    transition: 0.5s;
+    transform: rotate(45deg);
+    border: 2px solid #74b9ff;
+    top: 10px;
+    display: block;
+}
+.close2{
+    
+        position: relative;
+        margin-top: 10px;
+        width: 20px;
+        display: block;
+        bottom: 1px;
+        left: 8.5px;
+        top :1px;
+        z-index: 2;
+        transition: 0.5s;
+    transform: rotate(-45deg);
+    border: 2px solid #74b9ff;
+    top: -3px;
+    display: block;
+}
+
+.close3{
+        position: relative;
+        width: 30px;
+        margin-top: 10px;
+        display: block;
+        bottom: 1px;
+        left: 8.5px;
+        top: 1px;
+        z-index: 3;
+        transition: 0.5s;
+    display: none;
+}
+
+
+@media (max-width:1080px) {
+
+    .body{
+        height: 1100px;
+    }
+
+    .card{
+        display: block;
+        height: 900px;
+    }
+
+    .card .section{
+        display: block;
+        flex: none;
+        border: none;
+    }
+
+    .card .section .mydata{
+        padding-left: 0px;
+    }
+
+    .card .section .mydata p{
+        margin-left: 20px;
+    }
+
+    .brand{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+@media (max-width:1080px) {
+    .header .nav {
+        display: none;
+    }
+
+    
+
+    .burger {
+        position: absolute;
+        top: 1.5px;
+        right: 0px;
+        width: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.236);
+        height: 45px;
+
+    }
+
+    .bor {
+        border: 1px solid white;
+        position: relative;
+        margin-top: 10px;
+        width: 30px;
+        display: block;
+        bottom: 1px;
+        left: 8.5px;
+        top :1px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .bor1 {
+        border: 1px solid white;
+        position: relative;
+        width: 30px;
+        margin-top: 10px;
+        display: block;
+        bottom: 1px;
+        left: 8.5px;
+        top: 1px;
+        z-index: 3;
+        transition: 0.5s;
+    }
+    
+}
+@media (min-width:1080px) {
+
+    .side-nav-open{
+        width: 0px;
+    }
+
+    .close1{
+        display: none;
+
+    }
+
+    .close2{
+        display: none;
+    }
+}
